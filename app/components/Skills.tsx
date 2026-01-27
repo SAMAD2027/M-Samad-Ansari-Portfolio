@@ -171,11 +171,14 @@ const Skills: React.FC<SkillsProps> = ({ isAdmin }) => {
     const dy = y < cy ? -18 : 30;
     const dx = x > cx ? 12 : x < cx ? -12 : 0;
 
-    const label =
-      payload.value === 'Prompt Engineering'
-        ? ['Prompt', 'Engineering']
-        : [payload.value];
-
+    let label: string[];
+    if (payload.value === 'Prompt Engineering') {
+      label = ['Prompt', 'Engineering'];
+    } else if (payload.value === 'UI/UX Design') {
+      label = ['UI/UX', 'Design'];
+    } else {
+      label = [payload.value];
+        }
     return (
       <text
         x={x + dx}
