@@ -16,7 +16,7 @@ export const PROJECTS: Project[] = [
     title: 'Softadex Blogs',
     description: 'A responsive e-commerce application built with Flutter, focusing on seamless user journeys and state-of-the-art UI/UX patterns.',
     tags: ['Flutter', 'Dart', 'Firebase', 'State Management'],
-    imageUrl: 'https://images.unsplash.com/photo-1617042375876-a13e36734a04?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '',
     githubUrl: '',
   liveUrl: 'https://softadexblogs.netlify.app/'
 },
@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
     title: 'Agency Themes',
     description: 'An automation platform leveraging N8N and DeepSeek to build intelligent agents that handle complex email and data workflows.',
     tags: ['Python', 'N8N', 'AI Agents', 'Automation'],
-    imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '',
     githubUrl: '#',
     liveUrl: 'https://agencythemes.netlify.app/'
   },
@@ -48,15 +48,7 @@ export const PROJECTS: Project[] = [
     liveUrl: 'https://luxebeauti.netlify.app/'
 
   },
-  {
-    id: '6',
-    title: 'Sneaker Shop',
-    description: 'A test project to test the project component.',
-    tags: ['Test', 'Project', 'Test'],
-    imageUrl: '',
-    githubUrl: 'https://github.com/SAMAD2027/Sneaker_Shop',
-    liveUrl: ''
-  }
+
 ];
 
 // Added unique IDs to each skill to satisfy the Skill interface
