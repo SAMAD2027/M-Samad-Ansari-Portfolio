@@ -47,6 +47,15 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/SAMAD2027/M-Samad-Ansari-Portfolio',
     liveUrl: 'https://luxebeauti.netlify.app/'
 
+  },
+  {
+    id: '6',
+    title: 'Sneaker Shop',
+    description: 'A test project to test the project component.',
+    tags: ['Test', 'Project', 'Test'],
+    imageUrl: '',
+    githubUrl: 'https://github.com/SAMAD2027/Sneaker_Shop',
+    liveUrl: ''
   }
 ];
 
