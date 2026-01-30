@@ -81,10 +81,10 @@ const Certificates: React.FC<CertificatesProps> = ({ isAdmin }) => {
     setFormState({
       title: cert.title,
       issuer: cert.issuer,
-      pdfData: cert.pdfData || '',
-      date: cert.date,
+      pdfData: cert.pdfData ?? '',
+      date: cert.date ?? '',
       skills: cert.skills?.join(', ') || '',
-      thumbnailUrl: cert.thumbnailUrl || ''
+      thumbnailUrl: cert.thumbnailUrl ?? ''
     });
     setIsModalOpen(true);
   };

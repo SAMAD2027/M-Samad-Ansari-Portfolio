@@ -8,6 +8,7 @@ interface ProjectsProps {
   isAdmin?: boolean;
 }
 
+
 const Projects: React.FC<ProjectsProps> = ({ isAdmin }) => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,15 +22,21 @@ const Projects: React.FC<ProjectsProps> = ({ isAdmin }) => {
     liveUrl: ''
   });
 
+  // useEffect(() => {
+  //   const saved = localStorage.getItem('portfolio_projects');
+  //   if (saved) {
+  //     setProjects(JSON.parse(saved));
+  //   } else {
+  //     setProjects(PROJECTS);
+  //     localStorage.setItem('portfolio_projects', JSON.stringify(PROJECTS));
+  //   }
+  // }, []);
   useEffect(() => {
-    const saved = localStorage.getItem('portfolio_projects');
-    if (saved) {
-      setProjects(JSON.parse(saved));
-    } else {
-      setProjects(PROJECTS);
-      localStorage.setItem('portfolio_projects', JSON.stringify(PROJECTS));
-    }
-  }, []);
+  setProjects(PROJECTS);
+}, []);
+setProjects(PROJECTS);
+localStorage.setItem('portfolio_projects', JSON.stringify(PROJECTS));
+
 
   const handleOpenAdd = () => {
     setEditingId(null);

@@ -153,7 +153,7 @@ const Skills: React.FC<SkillsProps> = ({ isAdmin }) => {
             <RadarChart 
               cx="50%" 
               cy="50%" 
-              outerRadius="62%" 
+              outerRadius="60%" 
               data={radarData} 
               margin={{ top: 40, right: 40, bottom: 40, left: 40 }}
             >
@@ -171,14 +171,16 @@ const Skills: React.FC<SkillsProps> = ({ isAdmin }) => {
     const dy = y < cy ? -18 : 30;
     const dx = x > cx ? 12 : x < cx ? -12 : 0;
 
-    let label: string[];
-    if (payload.value === 'Prompt Engineering') {
-      label = ['Prompt', 'Engineering'];
-    } else if (payload.value === 'UI/UX Design') {
+    let label =
+      payload.value === 'Prompt Engineering'
+        ? ['Prompt', 'Engineering']
+        : [payload.value];
+    if (payload.value === 'UI/UX Design') {
       label = ['UI/UX', 'Design'];
     } else {
       label = [payload.value];
-        }
+    }
+    
     return (
       <text
         x={x + dx}
@@ -196,8 +198,7 @@ const Skills: React.FC<SkillsProps> = ({ isAdmin }) => {
         ))}
       </text>
     );
-  }}
-              />
+  }}          />
 
               <PolarRadiusAxis angle={30} domain={[0, 100]} tick={false} axisLine={false} />
               <Radar

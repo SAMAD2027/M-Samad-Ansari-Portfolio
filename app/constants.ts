@@ -1,35 +1,52 @@
-
-import { u } from 'framer-motion/client';
 import { Project, Skill, Experience, Certificate } from './types';
 
 
 export const PROJECTS: Project[] = [
   {
-    id: '1',
-    title: 'Flutter Flow Mobile',
-    description: 'A responsive e-commerce application built with Flutter, focusing on seamless user journeys and state-of-the-art UI/UX patterns.',
-    tags: ['Flutter', 'Dart', 'Firebase', 'State Management'],
-    imageUrl: 'https://images.unsplash.com/photo-1617042375876-a13e36734a04?auto=format&fit=crop&q=80&w=800',
-    githubUrl: '#',
-    liveUrl: '#'
+    id: 'portfolio',
+    title: 'My Portfolio Website',
+    description: 'My personal developer portfolio built with React and deployed on Vercel.',
+    tags: ['React', 'Tailwind', 'Vercel','HTML','CSS','JavaScript','React Native','Next.js','Node.js','Express.js','MongoDB','MySQL','PostgreSQL'],
+    imageUrl: "/images/Me.png",
+    liveUrl: 'https://samad-portfolio-c92hyweg3-samads-projects-45af0616.vercel.app/',
+    githubUrl: 'https://github.com/SAMAD2027/M-Samad-Ansari-Portfolio'
   },
   {
     id: '2',
-    title: 'AI Agent Automator',
+    title: 'Softadex Blogs',
+    description: 'A responsive e-commerce application built with Flutter, focusing on seamless user journeys and state-of-the-art UI/UX patterns.',
+    tags: ['Flutter', 'Dart', 'Firebase', 'State Management'],
+    imageUrl: 'https://images.unsplash.com/photo-1617042375876-a13e36734a04?auto=format&fit=crop&q=80&w=800',
+    githubUrl: '',
+  liveUrl: 'https://softadexblogs.netlify.app/'
+},
+  {
+    id: '3',
+    title: 'Agency Themes',
     description: 'An automation platform leveraging N8N and DeepSeek to build intelligent agents that handle complex email and data workflows.',
     tags: ['Python', 'N8N', 'AI Agents', 'Automation'],
     imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
     githubUrl: '#',
-    liveUrl: '#'
+    liveUrl: 'https://agencythemes.netlify.app/'
   },
   {
-    id: '3',
-    title: 'Creative UI Kit',
+    id: '4',
+    title: 'ApexS Build',
     description: 'A comprehensive component library designed for high-fidelity mobile prototyping with a focus on accessibility and consistency.',
     tags: ['Figma', 'UI/UX', 'Flutter', 'Design Systems'],
     imageUrl: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=800',
     githubUrl: '#',
-    liveUrl: '#'
+    liveUrl: 'https://apexsbuild.netlify.app/'
+  },
+  {
+    id: '5',
+    title: 'Luxe Beauty',
+    description: 'A test project to test the project component.',
+    tags: ['Test', 'Project', 'Test'],
+    imageUrl: '',
+    githubUrl: 'https://github.com/SAMAD2027/M-Samad-Ansari-Portfolio',
+    liveUrl: 'https://luxebeauti.netlify.app/'
+
   }
 ];
 
